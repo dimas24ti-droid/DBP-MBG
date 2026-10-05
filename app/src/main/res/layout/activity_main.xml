@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3F8FC">
+
+    <!-- Toolbar / App Bar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0072BC"
+        android:title="MBG Smart Kitchen"
+        android:titleTextColor="#FFFFFF" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Greeting Banner -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Makanan Bergizi Gratis"
+                        android:textColor="#005B96"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/logo_mbg"
+                    android:contentDescription="Chef Logo" />
+            </LinearLayout>
+
+            <!-- 2x2 Grid of Cards (Blue Theme) -->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="2"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false"
+                android:layout_marginBottom="16dp">
+
+                <!-- Card 1: Total Produksi -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:background="#0072BC"
+                    android:padding="16dp"
+                    android:layout_margin="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Produksi Hari Ini"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1.250"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Porsi"
+                        android:textColor="#E3F2FD"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- Card 2: Jumlah Penerima -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:background="#009688"
+                    android:padding="16dp"
+                    android:layout_margin="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jumlah Penerima"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1.200"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Anak"
+                        android:textColor="#E0F2F1"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- Card 3: Stok Bahan (btnStok) -->
+                <LinearLayout
+                    android:id="@+id/btnStok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:background="#005B96"
+                    android:padding="16dp"
+                    android:layout_margin="4dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stok Bahan"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jenis"
+                        android:textColor="#E3F2FD"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- Card 4: Menu Hari Ini -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:background="#3F51B5"
+                    android:padding="16dp"
+                    android:layout_margin="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Menu Hari Ini"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nasi + Ayam"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+ Sayur + Buah"
+                        android:textColor="#E8EAF6"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </GridLayout>
+
+            <!-- Chart / Production Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Grafik Produksi 7 Hari Terakhir"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Simple visual representation of bars -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:orientation="horizontal"
+                    android:gravity="bottom|center"
+                    android:weightSum="7"
+                    android:paddingTop="8dp">
+
+                    <!-- Bar Sen -->
+                    <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="bottom|center" android:orientation="vertical">
+                        <View android:layout_width="20dp" android:layout_height="70dp" android:background="#0072BC" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sen" android:textSize="11sp" android:textColor="#666666" android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+                    <!-- Bar Sel -->
+                    <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="bottom|center" android:orientation="vertical">
+                        <View android:layout_width="20dp" android:layout_height="80dp" android:background="#0072BC" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sel" android:textSize="11sp" android:textColor="#666666" android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+                    <!-- Bar Rab -->
+                    <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="bottom|center" android:orientation="vertical">
+                        <View android:layout_width="20dp" android:layout_height="90dp" android:background="#0072BC" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rab" android:textSize="11sp" android:textColor="#666666" android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+                    <!-- Bar Kam -->
+                    <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="bottom|center" android:orientation="vertical">
+                        <View android:layout_width="20dp" android:layout_height="110dp" android:background="#005B96" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kam" android:textSize="11sp" android:textColor="#666666" android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+                    <!-- Bar Jum -->
+                    <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="bottom|center" android:orientation="vertical">
+                        <View android:layout_width="20dp" android:layout_height="95dp" android:background="#0072BC" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Jum" android:textSize="11sp" android:textColor="#666666" android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+                    <!-- Bar Sab -->
+                    <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="bottom|center" android:orientation="vertical">
+                        <View android:layout_width="20dp" android:layout_height="105dp" android:background="#0072BC" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sab" android:textSize="11sp" android:textColor="#666666" android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+                    <!-- Bar Min -->
+                    <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="bottom|center" android:orientation="vertical">
+                        <View android:layout_width="20dp" android:layout_height="95dp" android:background="#0072BC" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Min" android:textSize="11sp" android:textColor="#666666" android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Navigation Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/btnProduksi"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="Produksi"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:backgroundTint="#0072BC"
+                    android:layout_marginEnd="6dp" />
+
+                <Button
+                    android:id="@+id/btnDistribusi"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:text="Distribusi"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:backgroundTint="#005B96"
+                    android:layout_marginStart="6dp" />
+            </LinearLayout>
+
+            <!-- Official Website Button -->
+            <Button
+                android:id="@+id/linkWebsite"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Kunjungi Website Resmi (www.bgn.go.id)"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:backgroundTint="#003366"
+                android:layout_marginBottom="24dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
