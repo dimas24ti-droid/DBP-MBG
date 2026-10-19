@@ -3,6 +3,8 @@
 
     <application
         android:allowBackup="true"
+        android:icon="@drawable/logo_mbg"
+        android:roundIcon="@drawable/logo_mbg"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.DBPMBG">
@@ -12,11 +14,23 @@
             android:exported="false" />
 
         <activity
+            android:name=".DistribusiProfileActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".StokActivity"
             android:exported="false" />
 
         <activity
             android:name=".ProduksiActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".KalkulatorActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".JadwalMenuActivity"
             android:exported="false" />
 
         <activity
@@ -30,8 +44,12 @@
 
         <activity
             android:name=".splash.SplashScreenActivity"
-            android:exported="true"
-            android:windowSoftInputMode="adjustResize">
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".BaseActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

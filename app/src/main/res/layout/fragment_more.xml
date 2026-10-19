@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#F3F8FC"
+    android:padding="24dp">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo_mbg"
+        android:contentDescription="Logo MBG"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⚙️ Fitur Tambahan &amp; More"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#005B96"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pengaturan, Kalkulator Gizi, Jadwal Menu, dan Laporan."
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Button 1: Kalkulator Gizi -->
+    <Button
+        android:id="@+id/btnOpenKalkulator"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="🧮 Kalkulator Kebutuhan Bahan"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:backgroundTint="#0072BC"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Button 2: Jadwal Menu Mingguan -->
+    <Button
+        android:id="@+id/btnOpenJadwalMenu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="📅 Jadwal Menu Bergizi Mingguan"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:backgroundTint="#00838F"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Button 3: Share Laporan Operasional -->
+    <Button
+        android:id="@+id/btnShareReport"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="📊 Ekspor &amp; Bagikan Laporan"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:backgroundTint="#009688"
+        android:layout_marginBottom="16dp" />
+
+</LinearLayout>

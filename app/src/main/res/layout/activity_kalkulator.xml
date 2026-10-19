@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3F8FC">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0072BC"
+        android:title="Kalkulator Kebutuhan Bahan MBG"
+        android:titleTextColor="#FFFFFF" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/logo_mbg"
+                android:contentDescription="Logo MBG"
+                android:layout_gravity="center"
+                android:layout_marginBottom="12dp"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hitung Kebutuhan Bahan Berdasarkan Porsi"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#005B96"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/etPortions"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Masukkan Jumlah Porsi (Contoh: 500)"
+                android:inputType="number"
+                android:singleLine="true"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:backgroundTint="#0072BC"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/btnCalculate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="HITUNG KEBUTUHAN BAHAN"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:backgroundTint="#0072BC"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Hasil Kalkulasi Card -->
+            <LinearLayout
+                android:id="@+id/layoutResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hasil Estimasi Bahan Baku:"
+                    android:textStyle="bold"
+                    android:textColor="#005B96"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:id="@+id/tvBeras"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Beras: 0 kg"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:id="@+id/tvAyam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Daging Ayam / Protein: 0 kg"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:id="@+id/tvSayur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Sayuran Segar: 0 kg"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:id="@+id/tvBuah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Buah Segar: 0 Porsi"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="16dp" />
+
+                <Button
+                    android:id="@+id/btnShareResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="Bagikan Hasil Estimasi"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#009688"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
