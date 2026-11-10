@@ -34,6 +34,23 @@
             android:exported="false" />
 
         <activity
+            android:name=".pertemuan_10.TenthActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".tutorial.TutorialMessageActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".splash.OnboardingActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name=".DeveloperActivity"
             android:exported="false" />
 
@@ -49,12 +66,7 @@
 
         <activity
             android:name=".BaseActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
 
         <activity
             android:name=".MainActivity"

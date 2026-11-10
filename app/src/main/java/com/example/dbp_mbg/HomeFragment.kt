@@ -10,7 +10,10 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.dbp_mbg.Auth.AuthActivity
+import com.example.dbp_mbg.pertemuan_10.TenthActivity
 
 class HomeFragment : Fragment() {
 
@@ -19,6 +22,22 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
+
+        val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerViewLogs)
+        recyclerView.layoutManager = LinearLayoutManager(requireContext())
+        
+        val logList = listOf(
+            ItemLog("Distribusi Sesi 1", "Pengiriman ke SDN 01 Pagi (250 Porsi)", "07.30 WIB", "Selesai"),
+            ItemLog("Masak Nasi & Lauk", "Selesai memasak porsi harian utama", "06.00 WIB", "Selesai"),
+            ItemLog("Penerimaan Stok Beras", "Masuk 500 kg beras dari Bulog", "Kemarin", "Diterima"),
+            ItemLog("Pengecekan Kualitas", "Uji higienitas dan gizi makanan oleh ahli gizi", "05.15 WIB", "Lolos")
+        )
+        recyclerView.adapter = ItemLogAdapter(logList)
+
+        view.findViewById<Button>(R.id.btnPertemuan10)?.setOnClickListener {
+            val intent = Intent(requireContext(), TenthActivity::class.java)
+            startActivity(intent)
+        }
 
         view.findViewById<View>(R.id.btnStok)?.setOnClickListener {
             val intent = Intent(requireContext(), StokActivity::class.java)
