@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#E3F2FD"
+    android:padding="32dp">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo_mbg"
+        android:contentDescription="Logo"
+        android:layout_marginBottom="24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Langkah 1: Pantau Produksi"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#005B96"
+        android:layout_marginBottom="12dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monitor jumlah porsi makanan bergizi setiap hari secara real-time."
+        android:textColor="#526779"
+        android:textSize="14sp"
+        android:gravity="center"/>
+</LinearLayout>

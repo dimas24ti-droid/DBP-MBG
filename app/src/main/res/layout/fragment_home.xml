@@ -3,15 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#F3F8FC">
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#0072BC"
-        android:title="Home"
-        android:titleTextColor="#FFFFFF" />
+    android:background="@drawable/bg_gradient_home">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -208,188 +200,33 @@
 
             </GridLayout>
 
-            <!-- Grafik Produksi -->
-            <LinearLayout
+            <!-- Tombol Pertemuan 10 -->
+            <Button
+                android:id="@+id/btnPertemuan10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="PELAJARI PERTEMUAN 10 (TabLayout &amp; RecyclerView)"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:backgroundTint="#673AB7"
+                android:layout_marginBottom="16dp" />
+
+            <!-- RecyclerView Section -->
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="#FFFFFF"
-                android:padding="16dp"
-                android:layout_marginBottom="16dp">
+                android:text="📋 Log Aktivitas Dapur Terbaru"
+                android:textColor="#005B96"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Grafik Produksi 7 Hari Terakhir"
-                    android:textColor="#333333"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="12dp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:orientation="horizontal"
-                    android:gravity="bottom|center"
-                    android:weightSum="7"
-                    android:paddingTop="8dp">
-
-                    <!-- Senin -->
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="bottom|center"
-                        android:orientation="vertical">
-
-                        <View
-                            android:layout_width="20dp"
-                            android:layout_height="70dp"
-                            android:background="#0072BC" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Sen"
-                            android:textSize="11sp"
-                            android:textColor="#666666"
-                            android:layout_marginTop="4dp" />
-                    </LinearLayout>
-
-                    <!-- Selasa -->
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="bottom|center"
-                        android:orientation="vertical">
-
-                        <View
-                            android:layout_width="20dp"
-                            android:layout_height="80dp"
-                            android:background="#0072BC" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Sel"
-                            android:textSize="11sp"
-                            android:textColor="#666666"
-                            android:layout_marginTop="4dp" />
-                    </LinearLayout>
-
-                    <!-- Rabu -->
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="bottom|center"
-                        android:orientation="vertical">
-
-                        <View
-                            android:layout_width="20dp"
-                            android:layout_height="90dp"
-                            android:background="#0072BC" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Rab"
-                            android:textSize="11sp"
-                            android:textColor="#666666"
-                            android:layout_marginTop="4dp" />
-                    </LinearLayout>
-
-                    <!-- Kamis -->
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="bottom|center"
-                        android:orientation="vertical">
-
-                        <View
-                            android:layout_width="20dp"
-                            android:layout_height="110dp"
-                            android:background="#005B96" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Kam"
-                            android:textSize="11sp"
-                            android:textColor="#666666"
-                            android:layout_marginTop="4dp" />
-                    </LinearLayout>
-
-                    <!-- Jumat -->
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="bottom|center"
-                        android:orientation="vertical">
-
-                        <View
-                            android:layout_width="20dp"
-                            android:layout_height="95dp"
-                            android:background="#0072BC" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Jum"
-                            android:textSize="11sp"
-                            android:textColor="#666666"
-                            android:layout_marginTop="4dp" />
-                    </LinearLayout>
-
-                    <!-- Sabtu -->
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="bottom|center"
-                        android:orientation="vertical">
-
-                        <View
-                            android:layout_width="20dp"
-                            android:layout_height="105dp"
-                            android:background="#0072BC" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Sab"
-                            android:textSize="11sp"
-                            android:textColor="#666666"
-                            android:layout_marginTop="4dp" />
-                    </LinearLayout>
-
-                    <!-- Minggu -->
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="bottom|center"
-                        android:orientation="vertical">
-
-                        <View
-                            android:layout_width="20dp"
-                            android:layout_height="95dp"
-                            android:background="#0072BC" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Min"
-                            android:textSize="11sp"
-                            android:textColor="#666666"
-                            android:layout_marginTop="4dp" />
-                    </LinearLayout>
-
-                </LinearLayout>
-            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewLogs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:layout_marginBottom="16dp" />
 
             <!-- Tombol Produksi dan Distribusi -->
             <LinearLayout
@@ -397,7 +234,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="4dp"
                 android:layout_marginBottom="12dp">
 
                 <Button
