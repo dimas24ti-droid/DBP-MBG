@@ -4,35 +4,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="#AED581"
     android:padding="32dp">
-
     <ImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
         android:src="@drawable/logo_mbg"
         android:contentDescription="Logo"
-        android:background="@drawable/ic_launcher_background"
-        android:padding="16dp"
         android:layout_marginBottom="24dp"/>
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tap untuk Membaca Detail"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="#212121"
-        android:gravity="center"
-        android:layout_marginBottom="16dp"/>
-
     <TextView
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ketuk salah satu pesan untuk melihat detailnya. Kamu juga bisa melakukan aksi lain seperti membalas atau membagikan informasi."
-        android:textColor="#333333"
         android:textSize="14sp"
-        android:gravity="center"
-        android:lineSpacingExtra="4dp"/>
-
 </LinearLayout>
