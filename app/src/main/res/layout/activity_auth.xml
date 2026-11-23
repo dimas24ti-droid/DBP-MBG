@@ -66,6 +66,16 @@
         android:text="LOGIN"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
-        android:backgroundTint="#0072BC" />
+        android:backgroundTint="#0072BC"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="DAFTAR AKUN BARU"
+        android:textColor="#0072BC"
+        android:textStyle="bold"
+        style="?attr/materialButtonOutlinedStyle" />
 
 </LinearLayout>

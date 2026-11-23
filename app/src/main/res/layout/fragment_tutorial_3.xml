@@ -6,15 +6,20 @@
     android:gravity="center"
     android:padding="32dp">
     <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:src="@drawable/logo_mbg"
         android:contentDescription="Logo"
         android:layout_marginBottom="24dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Tutorial 3"
         android:textSize="20sp"
-        android:textStyle="bold"
+        android:textStyle="bold" />
     <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="14sp"
+        android:text="Integrasi Supabase &amp; Data Realtime"
+        android:textSize="14sp" />
 </LinearLayout>

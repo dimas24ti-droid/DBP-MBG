@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambah Stok Bahan"
+        android:textColor="#005B96"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etNamaBahan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Bahan Makanan (e.g. Beras)"
+        android:inputType="text"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/etJumlah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jumlah (e.g. 500)"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/etSatuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Satuan (e.g. Kg, Liter, Pack)"
+        android:inputType="text"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/etKategori"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kategori (e.g. Karbohidrat, Daging)"
+        android:inputType="text"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/etStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Status (e.g. Tersedia, Hampir Habis)"
+        android:inputType="text"
+        android:layout_marginBottom="16dp" />
+
+</LinearLayout>
