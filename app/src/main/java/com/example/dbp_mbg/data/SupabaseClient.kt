@@ -9,12 +9,11 @@ import java.util.concurrent.TimeUnit
 
 object SupabaseClient {
 
-    // Ganti dengan URL Supabase kamu (contoh: "https://xyzcompany.supabase.co/")
-    // Pastikan diakhiri dengan tanda miring /
-    var SUPABASE_URL = "https://your-project-id.supabase.co/"
+    // URL Supabase dari proyek Anda
+    var SUPABASE_URL = "https://tqyepzcvjvacbrotxbji.supabase.co/"
 
-    // Ganti dengan Anon / Public Key dari Dashboard Supabase -> Project Settings -> API
-    var SUPABASE_KEY = "your-anon-key-here"
+    // API Key (Anon / Publishable Key) Supabase Anda
+    var SUPABASE_KEY = "sb_publishable_1XzHF28y_AEdlpfgIOlw4g_NJnQdHGm"
 
     private val authInterceptor = Interceptor { chain ->
         val original = chain.request()
@@ -41,8 +40,9 @@ object SupabaseClient {
     }
 
     val api: SupabaseApi by lazy {
+        val baseUrl = if (SUPABASE_URL.endsWith("/")) SUPABASE_URL else "$SUPABASE_URL/"
         Retrofit.Builder()
-            .baseUrl(if (SUPABASE_URL.endsWith("/")) SUPABASE_URL else "$SUPABASE_URL/")
+            .baseUrl(baseUrl)
             .client(okHttpClient)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
